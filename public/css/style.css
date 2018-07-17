@@ -445,9 +445,6 @@ body {
 
     	padding-top: 1rem;
   	}
-  	#footer-navigation-left {
-  		width: 100%;
-  	}
   }
   @media only screen and (max-width: 50em) {
     .story__content {
@@ -508,6 +505,7 @@ body {
     transform: translateY(50%); }
   .employee__location {
     padding: 1rem;
+    height: 21rem;
     grid-column: 1 / -1; }
     .employee__location p {
       font-size: 1.6rem; }
@@ -904,7 +902,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   background-image: linear-gradient(to right bottom, rgba(0, 91, 150, 0.2), rgba(1, 31, 75, 0.2)), url(../img/background.jpg);
   background-size: cover;
   background-position: top;
-  box-shadow: 0 3px 12px #383845;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16);
   position: relative; }
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     .header {
@@ -1101,7 +1099,15 @@ ORDER: Base + typography > general layout + grid > page layout > components
   width: 47rem;
 }
 
+#footer-navigation-left {
+  width: 47rem;
+}
+
   @media only screen and (max-width: 770px) {
+
+    #footer-navigation-left {
+      width: inherit;
+    }
     #map {
       width: inherit; } }
 
